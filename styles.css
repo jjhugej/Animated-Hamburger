@@ -73,3 +73,34 @@
 .hamburgerWrap .toggler:checked:hover + .hamburger > div {
   transform: rotate(225deg);
 }
+
+.caratWrap {
+  position: absolute;
+  top: 10vh;
+  left: 30vw;
+  border-radius: 50%;
+  padding: 10px;
+  border: solid 1px black;
+  animation-name: bounce;
+  animation-duration: 0.7s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.caratContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+  width: 10px;
+}
+@keyframes bounce {
+  from {
+    top: 10vh;
+  }
+  to {
+    top: 11vh;
+  }
+}
+.caratContainer i {
+  font-size: 2rem;
+}
